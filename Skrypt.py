@@ -1,0 +1,7 @@
+print("WDI moduł 1 zadanie 5 plik testowy")
+print("\n")
+a = input("Podaj pierwszą liczbę")
+b = input("Podaj drugą liczbę")
+print("\n")
+print('pierwsza liczba, ' + a)
+print('druga liczba liczba, ' + b)
