@@ -1,4 +1,5 @@
 #PROTOTYPOWY PLIK PROJEKTOWY
+import os
 def wybierz_rodzaj_przelicznika():
     jaki_przelicznik = input()
     if jaki_przelicznik == "CF":
@@ -18,6 +19,7 @@ def C_na_F():
         wynik = 32 + 9/5 * Celcjusze #przeliczamy używając wzoru
         wynik = round(wynik,2) #zaokrąglenie wyniku do 2 miejsc po przecinku
         print(Celcjusze,"°C = ",wynik,"°F") #wypisanie wyniku
+        os.system("pause")
     except ValueError: #jeśli podane stopnie nie dają się zamienić na liczbę z przecinkiem podaj jeszcze raz
         print("Złe dane spróbuj jeszcze raz")
         C_na_F()
@@ -29,6 +31,7 @@ def F_na_C():
         wynik = 5/9 * (Fahrenheity - 32) #przeliczamy używając wzoru
         wynik = round(wynik,2) #zaokrąglenie wyniku do 2 miejsc po przecinku
         print(Fahrenheity,"°F = ",wynik,"°C") #wypisanie wyniku
+        os.system("pause")
     except ValueError: #jeśli podane stopnie nie dają się zamienić na liczbę z przecinkiem podaj jeszcze raz
         print("Złe dane spróbuj jeszcze raz")
         F_na_C()
